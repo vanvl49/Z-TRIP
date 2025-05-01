@@ -1,6 +1,6 @@
 # rentalkuy
 
-A new Flutter project.
+Aplikasi Sewa Mobil dan Motor
 
 ## Getting Started
 

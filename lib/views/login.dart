@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rentalkuy/views/register.dart';
+import 'package:rentalkuy/views/lupapassword.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -103,7 +104,13 @@ class _LoginState extends State<Login> {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const ForgotPasswordScreen(),
+                      ),
+                    );
+                  },
                   child: const Text(
                     'Lupa Password?',
                     style: TextStyle(color: Colors.indigo),
